@@ -1,0 +1,40 @@
+
+//animation
+@mixin transform($property) {
+  -webkit-transform: $property;
+  -ms-transform: $property;
+  transform: $property;
+}
+
+
+//text
+@mixin h2($color:$header-color, $font-fam:$header-font-family) {
+  color: $color;
+  font-family: $font-fam;
+  font-weight: 700;
+  text-align: center;
+}
+@mixin h3($col:$intro-header-color, $font-fam:$header-font-family, $font-wei:$header-font-weight) {
+  color: $col;
+  font-family: $font-fam;
+  font-weight: $font-wei;
+  font-size: 22px;
+  font-style: italic;
+  text-align: center;
+}
+@mixin text-size-color($size, $color, $f-width:nul, $f-style:nul) {
+  font-size: $size;
+  color: $color;
+  font-width: $f-width;
+  font-style: $f-style;
+}
+@mixin text-align-last($posit) {
+  -moz-text-align-last: $posit;
+  text-align-last: $posit;
+}
+
+//padding marging
+@mixin null-m-p {
+  margin:0;
+  padding: 0;
+}

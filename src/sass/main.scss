@@ -1,5 +1,8 @@
-/*
- * Все паршалы импортировать в этот файл
- */
+// Main file
 
-@import 'style.scss';
+@import 'structure/variables';
+@import "structure/mixins";
+@import "structure/components";
+@import "structure/layout";
+
+//@import 'style.scss';
